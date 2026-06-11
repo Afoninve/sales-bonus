@@ -114,7 +114,7 @@ function analyzeSalesData(data, options) {
 
             // Выручка через переданную функцию
             const revenue = calculateRevenue(item, product);
-            stats.revenue += revenue;
+            stats.revenue += revenue.toFixed(2);
 
             // Закупочная стоимость
             const purchaseCost = product.purchase_price * item.quantity;
